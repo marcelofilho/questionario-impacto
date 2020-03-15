@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">QuestionarioImpacto</string>
+    <string name="label_card_terms_condition">Este questionário digital foi elaborado com o intuito de avaliar osimpactos ambientais de forma mais lúdica e interativa. Pretendemos,através desta ferramenta digital, compreender questões relativas aoseu modo de vida e maneiras de morar nas diversas escalas de suamoradia: desde o bairro até a sua casa.As informçações coletadas irão compor banco de dados sobre omorar contemporâneo, alimentando novos projetos e ações rumo àelevação da qualidade das moradias em nossas cidades.</string>
+    <string name="label_card_terms_condition2">“Eu entendo que a minha participação nesta pesquisa é voluntária.Também entendo que todas as informações serão tratadas com amáxima confidencialidade, que o meu anonimato acadêmicos ecientíficos”.</string>
+    <string name="label_explanation">O questinário é divido por seis sessòes e, dentro delas, há as questòes a serem respondidas e ao fim de cada questào, haverá uma opcào de avaliacao dos impactos avaliados nessas questóes, como mostra abaixo:</string>
+</resources>

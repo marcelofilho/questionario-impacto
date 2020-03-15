@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questionário"
+            android:textSize="32dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_extralight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/colorWhite"
+            android:letterSpacing="0.3"
+            android:text="IMPACTO"/>
+
+    </LinearLayout>
+
+</LinearLayout>
