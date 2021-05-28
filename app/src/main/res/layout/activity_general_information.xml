@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Informações Gerais"
+            android:textSize="36sp"
+            android:fontFamily="@font/poppins_extralight"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="30dp"
+            android:elevation="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorWhite"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Tipo de moradia :"
+           android:textSize="22sp"
+           android:layout_marginLeft="8dp"
+           android:textStyle="bold"
+           android:textColor="@color/colorWhite"
+           />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textAllCaps="true"
+            android:text="Casa"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:text="Apartamento"
+            />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unidade Habitacional sofreu reforma (ampliação de cômodos/varanda):"
+            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/sofreu_reforma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="6dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/sim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Sim"/>
+
+                <RadioButton
+                    android:id="@+id/nao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:layout_marginLeft="8dp"
+                    android:textAllCaps="true"
+                    android:text="NÃO"
+                    />
+            </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo do entrevistado"
+            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Masculino"/>
+
+                <RadioButton
+                    android:id="@+id/feminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="Feminino"
+                    />
+            </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idade do entrevistado"
+            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/idade"
+                >
+                <RadioButton
+                    android:id="@+id/jovem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Jovem – até 19 anos"/>
+
+                <RadioButton
+                    android:id="@+id/adulto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Adulto – de 20 a 59 anos"
+                    />
+                <RadioButton
+                    android:id="@+id/idoso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:lines="1"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Idoso – a partir de 60 anos de idade"
+                    />
+
+            </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renda média mensal total da família (R$): "
+            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/renda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="6dp"
+                >
+                <RadioButton
+                    android:id="@+id/sem_renda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Não têm renda"/>
+
+                <RadioButton
+                    android:id="@+id/um"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="1 a 2 salários mínimos"
+                    />
+
+                <RadioButton
+                    android:id="@+id/dois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="2 a 3 salários mínimos"
+                    />
+
+                <RadioButton
+                    android:id="@+id/tres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="3 a 4 salário mínimos "
+                    />
+
+                <RadioButton
+                    android:id="@+id/quatro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textAllCaps="true"
+                    android:text="Mais de 4 salários mínimos"
+                    />
+            </RadioGroup>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_white"
+            android:layout_marginTop="26dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="nextScreen"
+            android:layout_marginBottom="16dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

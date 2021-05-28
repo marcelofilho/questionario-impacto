@@ -1,0 +1,41 @@
+{
+  "listThreat": [
+    {"title": "Chuvas intensas", "id" : "5b448b49-a1f7-49da-9753-a6b90295819a","sectionId": "1"},
+    { "title": "Longos períodos de estiagem", "id" : "c3f847fb-fa18-45df-a687-8861484fb276","sectionId": "1"},
+    {"title": "Ondas de calor", "id" : "05120995-e192-4cb1-bdde-3e55316f5d16","sectionId": "1"},
+    {"title": "Ondas de frio", "id" : "816cb285-3ef8-4674-8806-e94bb6a0ec70","sectionId": "1"},
+    {"title": "Ventos Fortes", "id" : "e77ecf8e-afaf-40d8-87d6-5d6bd450b843","sectionId": "1"},
+    {"title": "Alterações no abastecimento de água", "id" : "fe359a34-23cb-4260-81fe-83938ce7695d","sectionId": "2"},
+    {"title": "Desemprego", "id" : "bb76498b-4153-4193-9e30-f8ab9863c5d4","sectionId": "3"},
+    {"title": "Renda insuficiente", "id" : "bcae3967-7a37-4201-8f8c-0064347c624e","sectionId": "3"},
+    {"title": "Roubo, assalto, agressão", "id" : "b1f25404-18c7-4591-a590-31323291c38a","sectionId": "3"},
+    {"title": "Sensação de insegurança", "id" : "172f107f-27c5-4b90-b08f-dd30f2a5e142","sectionId": "3"},
+    {"title": "Isolamento social", "id" : "d7c4a8ce-f357-4c2c-b624-fd7aece3203e","sectionId": "3"},
+    {"title": "Mudança não planejada de uma pessoa para a unidade habitacional", "id" : "57e65b69-033d-4469-a768-6606c34e5cba","sectionId": "4"},
+    {"title": "Dimensões reduzidas da unidade residencial", "id" : "1d5ea8d2-16db-4db5-be41-3a5efaf30072","sectionId": "4"},
+    {"title": "A dificuldade em se adaptar à unidade habitacional", "id" : "239993a4-cf85-48f4-b717-f8669cbd91fc","sectionId": "4"},
+    {"title": "A realização de muitas atividades em um mesmo cômodo", "id" : "602a2694-36c8-4f14-9f3f-868e0fdc7dee","sectionId": "4"},
+    {"title": "O baixo padrão construtivo", "id" : "32e51097-e982-4f31-86b4-bc34577940bf","sectionId": "4"},
+    {"title": "A falta de previsão de um cômodo a mais para trabalho/comércio/serviço", "id" : "226f59d5-b59d-4bf4-8832-f6891109aca0","sectionId": "4"},
+    {"title": "Reforma sem assistência técnica representa", "id" : "5029c0d1-1fa7-4b13-9fbf-9e0649ed579b","sectionId": "4"},
+    {"title": "Reforma com assistência técnica ineficiente", "id" : "c72f534c-5d12-40ee-b405-c7c8baa855e9","sectionId": "4"},
+    {"title": " Localização periférica", "id" : "17dc511b-3f16-494e-9c2a-c3fc29410ccc","sectionId": "4"},
+    {"title": "Falta de qualidade nas áreas públicas (ruas)", "id" : "44b1a688-d003-418c-8de1-011f4b2c5625","sectionId": "5"},
+    {"title": "Iluminação pública ineficiente", "id" : "103c24e2-ea40-4af6-9847-eb177ea5c51a","sectionId": "5"},
+    {"title": "Áreas de lazer desqualificadas (praças, parques, poliesportivos)", "id" : "8306d75a-d426-4784-b7f7-a724a6a6cb7c","sectionId": "5"},
+    {"title": "Falta de equipamentos de lazer", "id" : "5888dd8f-970c-4ae6-9a2d-cf3b21bc2bea","sectionId": "5"},
+    {"title": "A falta de equipamentos de atenção à saúde", "id" : "09155609-492a-48c4-af6b-096f5cfd6319","sectionId": "5"},
+    {"title": "A falta de instituições de ensino", "id" : "43d0a9ea-ecaa-4368-829f-5019353b26cb","sectionId": "5"},
+    {"title": "A descontinuidade de políticas/serviços públicos", "id" : "43de8abe-0992-4981-871b-f47e0f3e0957","sectionId": "5"},
+    {"title": "Lideranças de bairro/condomínio ineficientes", "id" : "6a710d6f-07ef-42a3-90f1-7d4981ed5012","sectionId": "5"},
+    {"title": "Falta de acessibilidade e desenho universal", "id" : "fb806139-268e-4bd6-9570-3717c15c57a7","sectionId": "5"},
+    {"title": "A presença de lixo em áreas verdes ou públicas", "id" : "e98f0101-6cca-4f5c-bb86-ace8324dcbd4","sectionId": "6"},
+    {"title": "A falta de vegetação/arborização no lote e na rua", "id" : "e07b729f-8c42-47cf-ace3-85c9af8e3df3","sectionId": "6"}
+
+
+
+
+
+
+  ]
+}
