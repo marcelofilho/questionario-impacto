@@ -30,10 +30,7 @@ class ShowMoreActivity : AppCompatActivity() {
         tvBack!!.text = contentBack
     }
 
-    fun openUrl(view: View?) {
-        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://morahabitacao.com/pesquisas-em-andamento-2/ber_home-resiliencia-no-ambiente-construido-em-habitacao-social-metodos-de-avaliacao-tecnologicamente-avancados/)"))
-        startActivity(browserIntent)
-    }
+
 
     fun back(view: View?) {
         super.onBackPressed()

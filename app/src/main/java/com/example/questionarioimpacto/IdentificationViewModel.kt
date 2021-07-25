@@ -49,7 +49,7 @@ class IdentificationViewModel : ViewModel(){
 
 
             override fun onResponse(call: Call<DwellerIdModel>, response: Response<DwellerIdModel>) {
-              dwellerIdGenerate.value = "111"
+              dwellerIdGenerate.value = response.body()?.dwellerIdGenerate
             }
         })
 

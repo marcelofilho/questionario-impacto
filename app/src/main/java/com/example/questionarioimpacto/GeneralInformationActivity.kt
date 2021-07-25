@@ -26,8 +26,8 @@ class GeneralInformationActivity : AppCompatActivity() {
         binding = ActivityGeneralInformationBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        arrayList = intent.getParcelableArrayListExtra<QuestionIdModel>("list")
-        dwellerId = intent.getStringExtra("dwellerId")
+//        arrayList = intent.getParcelableArrayListExtra<QuestionIdModel>("list")!!
+        dwellerId = intent.getStringExtra("dwellerId")!!
 
     }
 

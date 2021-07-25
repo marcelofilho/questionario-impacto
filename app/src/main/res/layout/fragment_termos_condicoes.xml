@@ -17,12 +17,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include
-                layout="@layout/top_view"
-                android:layout_width="match_parent"
-                android:layout_height="80dp" />
-
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,13 +87,12 @@
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         android:gravity="center"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <Button
                             android:id="@+id/acceptButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="31dp"
                             android:background="@drawable/bg_border_round_blue"
                             android:backgroundTint="#fde079"
                             android:fontFamily="@font/poppins_black"
@@ -123,6 +116,7 @@
                             android:paddingTop="2dp"
                             android:paddingRight="8dp"
                             android:paddingBottom="2dp"
+                            android:layout_marginTop="8dp"
                             android:text="não concordo"
                             android:textColor="@color/colorWhite" />
 

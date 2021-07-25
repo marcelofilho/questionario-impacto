@@ -9,9 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.questionarioimpacto.R
 import com.example.questionarioimpacto.adapters.ThreatAdapter.ThreatHolder
+import com.example.questionarioimpacto.fragmentos.AmeacaFragment
 import com.example.questionarioimpacto.models.ThreatModel
 
-class ThreatAdapter(private val listThreat: List<ThreatModel>, private val mContext: Context, private val manipularListaQuestaoListenner: ManipularListaQuestaoListenner) : RecyclerView.Adapter<ThreatHolder>() {
+class ThreatAdapter(private val listThreat: List<ThreatModel>, private val manipularListaQuestaoListenner: AmeacaFragment) : RecyclerView.Adapter<ThreatHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ThreatHolder {
         return ThreatHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_button, parent, false))
     }

@@ -85,12 +85,12 @@
             />
 
         <ImageButton
+            android:id="@+id/to_next_fragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/arrow_white"
             android:layout_marginTop="26dp"
             android:backgroundTint="@color/colorPrimary"
-            android:onClick="nextScreen"
             />
 
 

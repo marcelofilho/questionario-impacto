@@ -7,17 +7,17 @@ import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.questionarioimpacto.SectionAdapter.SectionHolder
+import com.example.questionarioimpacto.fragmentos.SecaoFragment
 import com.example.questionarioimpacto.models.ListSectionModel
-import com.example.questionarioimpacto.models.SectionModel
 
-class SectionAdapter(private val listSection: ListSectionModel, private val mListenner: ItemClick) : RecyclerView.Adapter<SectionHolder>() {
+class SectionAdapter(private val listSection: ListSectionModel, private val mListenner: SecaoFragment) : RecyclerView.Adapter<SectionHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SectionHolder {
         return SectionHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_button, parent, false))
     }
 
     override fun onBindViewHolder(holder: SectionHolder, position: Int) {
         holder.button.text = listSection.listSection?.get(position)!!.title
-        holder.button.setOnClickListener { mListenner.clickButton(listSection.listSection?.get(position)?.id) }
+        holder.button.setOnClickListener { mListenner.clickButton(listSection.listSection.get(position).id!!) }
     }
 
     override fun getItemCount(): Int {
@@ -59,6 +59,6 @@ class SectionAdapter(private val listSection: ListSectionModel, private val mLis
 
 
     interface ItemClick {
-        fun clickButton(id: String?)
+        fun clickButton(id: String)
     }
 }

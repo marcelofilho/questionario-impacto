@@ -28,10 +28,52 @@
     <fragment
         android:id="@+id/indentificacaoFragment"
         android:name="com.example.questionarioimpacto.fragmentos.IndentificacaoFragment"
-        android:label="IndentificacaoFragment" />
+        android:label="IndentificacaoFragment" >
+        <action
+            android:id="@+id/action_indentificacaoFragment_to_informacoesGeraisFragment"
+            app:destination="@id/informacoesGeraisFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mostrarMaisFragment"
         android:name="com.example.questionarioimpacto.fragmentos.MostrarMaisFragment"
         android:label="fragment_mostrar_mais"
         tools:layout="@layout/fragment_mostrar_mais" />
+    <fragment
+        android:id="@+id/informacoesGeraisFragment"
+        android:name="com.example.questionarioimpacto.fragmentos.InformacoesGeraisFragment"
+        android:label="InformacoesGeraisFragment" >
+        <action
+            android:id="@+id/action_informacoesGeraisFragment_to_secaoFragment"
+            app:destination="@id/secaoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secaoFragment"
+        android:name="com.example.questionarioimpacto.fragmentos.SecaoFragment"
+        android:label="SecaoFragment" >
+        <action
+            android:id="@+id/action_secaoFragment_to_ameacaFragment"
+            app:destination="@id/ameacaFragment" />
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/ameacaFragment"
+        android:name="com.example.questionarioimpacto.fragmentos.AmeacaFragment"
+        android:label="AmeacaFragment" >
+        <argument
+            android:name="idAmeaca"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ameacaFragment_to_questoesFragment"
+            app:destination="@id/questoesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questoesFragment"
+        android:name="com.example.questionarioimpacto.fragmentos.QuestoesFragment"
+        android:label="QuestoesFragment" >
+        <argument
+            android:name="idAmeaca"
+            app:argType="string" />
+    </fragment>
 </navigation>

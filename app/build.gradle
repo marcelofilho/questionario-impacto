@@ -14,13 +14,22 @@ android {
         enabled = true
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
-    compileSdkVersion 29
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+
+    compileSdkVersion 30
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.questionarioimpacto"
         minSdkVersion 24
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -31,6 +40,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug{  }
     }
 }
 
@@ -53,10 +63,24 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
-    implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
-    implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0-rc02'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0-rc02'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
+
+  def koin_version = '3.1.2'
+    implementation "io.insert-koin:koin-android:$koin_version"
+// Koin Java Compatibility
+    implementation "io.insert-koin:koin-android-compat:$koin_version"
+// Koin for Jetpack WorkManager
+    implementation "io.insert-koin:koin-androidx-workmanager:$koin_version"
+// Koin for Jetpack Compose
+    implementation "io.insert-koin:koin-androidx-compose:$koin_version"
+
+    // Koin for JUnit 4
+    testImplementation "io.insert-koin:koin-test-junit4:$koin_version"
+// Koin for JUnit 5
+    testImplementation "io.insert-koin:koin-test-junit5:$koin_version"
 }
 repositories {
     mavenCentral()

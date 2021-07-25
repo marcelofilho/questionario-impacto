@@ -33,8 +33,8 @@ class ThreatActivity : AppCompatActivity(), ThreatAdapter.ManipularListaQuestaoL
         setContentView(R.layout.activity_threat)
         val view = findViewById<View>(R.id.include2)
         viewModel =  ViewModelProvider(this).get(IdentificationViewModel::class.java)
-        arrayList = intent.getParcelableArrayListExtra<QuestionIdModel>("list")
-        dwellerId = intent.getStringExtra("dwellerId")
+//        arrayList = intent.getParcelableArrayListExtra<QuestionIdModel>("list")!!
+        dwellerId = intent.getStringExtra("dwellerId")!!
         threatList = Gson().fromJson(incrementList.loadJSONFromAsset(this,"threat_list"), ThreatListModel::class.java)
         id = intent.extras!!.getString("ID")
         buttonNext = view.findViewById<View>(R.id.button_next) as Button
@@ -42,7 +42,7 @@ class ThreatActivity : AppCompatActivity(), ThreatAdapter.ManipularListaQuestaoL
         mRecyclerView = findViewById<View>(R.id.recyclerView) as RecyclerView
         val layoutManager = LinearLayoutManager(this)
         mRecyclerView?.setLayoutManager(layoutManager)
-        threatAdapter = ThreatAdapter(filtrarList(threatList), this, this)
+//        threatAdapter = ThreatAdapter(filtrarList(threatList), this, this)
         mRecyclerView?.setAdapter(threatAdapter)
 
         buttonNext!!.setOnClickListener {

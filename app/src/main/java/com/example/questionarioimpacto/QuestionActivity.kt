@@ -29,8 +29,8 @@ class QuestionActivity : AppCompatActivity(), QuestionsAdapter.QuestionListenner
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
-        arrayList = intent.getParcelableArrayListExtra<QuestionIdModel>("list")
-        dwellerId = intent.getStringExtra("dwellerId")
+//        arrayList = intent.getParcelableArrayListExtra<QuestionIdModel>("list")!!
+        dwellerId = intent.getStringExtra("dwellerId")!!
         questionList = Gson().fromJson(incrementList.loadJSONFromAsset(this, "question_list"), QuestionListModel::class.java)
         mRecyclerView = findViewById(R.id.rv_questions)
         val view = findViewById<View>(R.id.include2)
