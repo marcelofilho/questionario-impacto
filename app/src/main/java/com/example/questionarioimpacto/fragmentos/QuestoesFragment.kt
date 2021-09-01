@@ -2,6 +2,7 @@ package com.example.questionarioimpacto.fragmentos
 
 
 import androidx.lifecycle.ViewModel
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.questionarioimpacto.Base.BaseFragment
 import com.example.questionarioimpacto.R
@@ -38,6 +39,14 @@ class QuestoesFragment : BaseFragment<FragmentQuestoesBinding>(),
         idSection = args.idAmeaca
         questionList = Gson().fromJson(incrementList.loadJSONFromAsset(context, "question_list"), QuestionListModel::class.java)
         setAdapter()
+        setListenners()
+    }
+
+    private fun setListenners() {
+        binding.include4.buttonNext.setOnClickListener {
+            adicionarList()
+            view?.findNavController()?.navigate(QuestoesFragmentDirections.actionQuestoesFragmentToSecaoFragment(idSection))
+        }
     }
 
     private fun setAdapter() {
@@ -56,9 +65,9 @@ class QuestoesFragment : BaseFragment<FragmentQuestoesBinding>(),
         questionList.questionList?.forEach{
 
             when(it.state){
-                "Pouco" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId", it.id, "pouco", "5d41b0ce34e4386291d1a769"))
-                "Muito" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId", it.id, "muito", "5d41b0ce34e4386291d1a769"))
-                "Nenhum" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId", it.id, "nenhum", "5d41b0ce34e4386291d1a769"))
+                "Pouco" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , it.id, "pouco", "5d41b0ce34e4386291d1a769"))
+                "Muito" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , it.id, "muito", "5d41b0ce34e4386291d1a769"))
+                "Nenhum" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , it.id, "nenhum", "5d41b0ce34e4386291d1a769"))
             }
 
         }

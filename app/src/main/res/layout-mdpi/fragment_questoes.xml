@@ -34,7 +34,7 @@
                     android:layout_marginTop="6dp"
                     android:text="@string/info_question"
                     android:textColor="@color/colorWhite"
-                    android:textSize="20sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -42,6 +42,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="6dp"
+                    android:textSize="10sp"
                     android:layout_marginBottom="16dp"
                     android:text="Marque mais de uma opção, se necessário"
                     android:textColor="@color/colorWhite"

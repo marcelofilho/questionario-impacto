@@ -6,6 +6,7 @@
     {"title": "Ondas de frio", "id" : "816cb285-3ef8-4674-8806-e94bb6a0ec70","sectionId": "1"},
     {"title": "Ventos Fortes", "id" : "e77ecf8e-afaf-40d8-87d6-5d6bd450b843","sectionId": "1"},
     {"title": "Alterações no abastecimento de água", "id" : "fe359a34-23cb-4260-81fe-83938ce7695d","sectionId": "2"},
+    {"title": "Alterações no abastecimento de energia", "id" : "fe359a34-23cb-4260-81fe-83938ce7695d","sectionId": "2"},
     {"title": "Desemprego", "id" : "bb76498b-4153-4193-9e30-f8ab9863c5d4","sectionId": "3"},
     {"title": "Renda insuficiente", "id" : "bcae3967-7a37-4201-8f8c-0064347c624e","sectionId": "3"},
     {"title": "Roubo, assalto, agressão", "id" : "b1f25404-18c7-4591-a590-31323291c38a","sectionId": "3"},
@@ -30,7 +31,16 @@
     {"title": "Lideranças de bairro/condomínio ineficientes", "id" : "6a710d6f-07ef-42a3-90f1-7d4981ed5012","sectionId": "5"},
     {"title": "Falta de acessibilidade e desenho universal", "id" : "fb806139-268e-4bd6-9570-3717c15c57a7","sectionId": "5"},
     {"title": "A presença de lixo em áreas verdes ou públicas", "id" : "e98f0101-6cca-4f5c-bb86-ace8324dcbd4","sectionId": "6"},
-    {"title": "A falta de vegetação/arborização no lote e na rua", "id" : "e07b729f-8c42-47cf-ace3-85c9af8e3df3","sectionId": "6"}
+    {"title": "A falta de vegetação/arborização no lote e na rua", "id" : "e07b729f-8c42-47cf-ace3-85c9af8e3df3","sectionId": "6"},
+     {"title": "Declínio da audição", "id" : "c36fa1f6-f9d6-4bad-bdf4-e522714ed33c","sectionId": "7"},
+     {"title": "Declínio da visão", "id" : "9b0732d8-eccd-4297-894f-71aa588ee9e5","sectionId": "7"},
+     {"title": "Declínio do olfato", "id" : "0a27395a-9553-43ec-9acf-a076e07a6251","sectionId": "7"},
+     {"title": "Declínio do tato", "id" : "0d06a597-1359-4f87-9add-58275857eb61","sectionId": "7"},
+     {"title": "Declínio do sistema genito-urinário", "id" : "d16027d7-1f95-44cf-9d3e-167b476a2806","sectionId": "7"},
+     {"title": "Declínio dos sistemas cardio vascular e respiratório", "id" : "062c1aa1-6861-4ac8-b01a-99f7f7b15af2","sectionId": "7"},
+     {"title": "Declínio do sistema nervoso", "id" : "c30775a7-ea1d-426e-8a42-022d28770bc0","sectionId": "7"},
+     {"title": "Declínio do sistema ósteo muscular", "id" : "30d69149-82d9-4cda-bc81-4caffb4d7d3e","sectionId": "7"}
+
 
 
 

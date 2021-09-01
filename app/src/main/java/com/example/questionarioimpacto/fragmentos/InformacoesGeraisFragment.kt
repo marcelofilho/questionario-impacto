@@ -12,6 +12,7 @@ import com.example.questionarioimpacto.databinding.FragmentIndentificacaoBinding
 import com.example.questionarioimpacto.databinding.FragmentInformacoesGeraisBinding
 import com.example.questionarioimpacto.databinding.FragmentInformacoesGeraisBindingImpl
 import com.example.questionarioimpacto.models.QuestionIdModel
+import kotlinx.android.synthetic.main.fragment_informacoes_gerais.*
 
 
 class InformacoesGeraisFragment : BaseFragment<FragmentInformacoesGeraisBinding>() {
@@ -23,6 +24,9 @@ class InformacoesGeraisFragment : BaseFragment<FragmentInformacoesGeraisBinding>
     var sexo: String = ""
     var idade: String = ""
     var renda: String = ""
+    var familia: String = ""
+    var quantidadePessoa: String = ""
+    var energia: String = ""
 
 
     override fun getLayoutId(): Int = R.layout.fragment_informacoes_gerais
@@ -42,10 +46,13 @@ class InformacoesGeraisFragment : BaseFragment<FragmentInformacoesGeraisBinding>
         }
     }
     private fun adicionandoNaLista(){
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId","005fb767-5f93-46dd-9f04-0d1157e47180",sofreuReforma,"5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId","cd5802b1-5902-4505-a3ca-943723b91aa0",sexo,"5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId","e98ec129-e897-42d2-aaa9-a4b82417842c",idade,"5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId","b621b73f-0851-46c5-9a1f-a0bed4ce9718",renda,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"005fb767-5f93-46dd-9f04-0d1157e47180",sofreuReforma,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"cd5802b1-5902-4505-a3ca-943723b91aa0",sexo,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"e98ec129-e897-42d2-aaa9-a4b82417842c",idade,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"b621b73f-0851-46c5-9a1f-a0bed4ce9718",renda,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"bfde39a8-6a04-4eb2-ad3e-fe05c68d2f26",familia,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"679d97f0-b7cf-4957-a2ca-00a8fb704931",quantidadePessoa,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,"1433c4fc-9c7c-4582-8c46-ef6ebce3438c",energia,"5d41b0ce34e4386291d1a769"))
     }
 
     private fun receberTextosRadioButton(){
@@ -70,6 +77,34 @@ class InformacoesGeraisFragment : BaseFragment<FragmentInformacoesGeraisBinding>
             binding.dois.id-> renda = "2 a 3 salários mínimos"
             binding.tres.id-> renda = "3 a 4 salário mínimos "
             binding.quatro.id-> renda = "Mais de 4 salários mínimos"
+        }
+
+        when(binding.familia.checkedRadioButtonId){
+            binding.umaPessoa.id -> familia = "Pessoa só"
+            binding.casalEFilho.id-> familia = "Casal + Filhos"
+            binding.paiOuMaeEFilho.id-> familia = "Pai Ou Mae + filhos"
+            binding.casalSemFilho.id-> familia = "Casal sem filhos"
+            binding.casalIdosos.id-> familia = "Casal de Idosos"
+            binding.casalFilhoParete.id-> familia = "Casal + Filhos+ Parentes"
+            binding.PaiMaeFilhoParente.id-> familia = "Pai ou Mãe + Filhos + Parentes"
+            binding.coabitacaoSemVinculo.id-> familia = "Coabitação (sem vínculo familiar)"
+            binding.coabitacaoComVinculo.id-> familia = "Casal de Idosos"
+        }
+
+        when(binding.quantidadePessoas.checkedRadioButtonId){
+            binding.semRenda.id -> quantidadePessoa = "Não têm renda"
+            binding.um.id-> quantidadePessoa = "1 a 2 salários mínimos"
+            binding.dois.id-> quantidadePessoa = "2 a 3 salários mínimos"
+            binding.tres.id-> quantidadePessoa = "3 a 4 salário mínimos "
+            binding.quatro.id-> quantidadePessoa = "Mais de 4 salários mínimos"
+        }
+
+        when(binding.energia.checkedRadioButtonId){
+            binding.semRenda.id -> energia = "Não têm renda"
+            binding.um.id-> energia = "1 a 2 salários mínimos"
+            binding.dois.id-> energia = "2 a 3 salários mínimos"
+            binding.tres.id-> energia = "3 a 4 salário mínimos "
+            binding.quatro.id-> energia = "Mais de 4 salários mínimos"
         }
     }
 

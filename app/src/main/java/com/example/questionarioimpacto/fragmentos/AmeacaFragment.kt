@@ -56,10 +56,10 @@ class AmeacaFragment : BaseFragment<FragmentAmeacaBinding>() {
     fun addListQuestion(){
         threatList.listThreat?.forEach{
             if(it.isSCheck){
-                arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId",it.id,"sim","5d41b0ce34e4386291d1a769"))
+                arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,it.id,"sim","5d41b0ce34e4386291d1a769"))
             }
             else {
-                arrayListQuestionModel.questionIdModelList.add(QuestionIdModel("dwellerId",it.id,"não","5d41b0ce34e4386291d1a769"))
+                arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId ,it.id,"não","5d41b0ce34e4386291d1a769"))
             }
         }
     }

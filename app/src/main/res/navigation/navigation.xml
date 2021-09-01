@@ -9,6 +9,7 @@
         android:id="@+id/splashFragment"
         android:name="com.example.questionarioimpacto.fragmentos.SplashFragment"
         android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash"
         >
         <action
             android:id="@+id/action_splashFragment_to_termosCondicoesFragment"
@@ -17,7 +18,8 @@
     <fragment
         android:id="@+id/termosCondicoesFragment"
         android:name="com.example.questionarioimpacto.fragmentos.TermosCondicoesFragment"
-        android:label="TermosCondicoesFragment" >
+        android:label="TermosCondicoesFragment"
+        tools:layout="@layout/fragment_termos_condicoes">
         <action
             android:id="@+id/action_termosCondicoesFragment_to_indentificacaoFragment"
             app:destination="@id/indentificacaoFragment" />
@@ -28,7 +30,8 @@
     <fragment
         android:id="@+id/indentificacaoFragment"
         android:name="com.example.questionarioimpacto.fragmentos.IndentificacaoFragment"
-        android:label="IndentificacaoFragment" >
+        android:label="IndentificacaoFragment"
+        tools:layout="@layout/fragment_indentificacao">
         <action
             android:id="@+id/action_indentificacaoFragment_to_informacoesGeraisFragment"
             app:destination="@id/informacoesGeraisFragment" />
@@ -41,7 +44,8 @@
     <fragment
         android:id="@+id/informacoesGeraisFragment"
         android:name="com.example.questionarioimpacto.fragmentos.InformacoesGeraisFragment"
-        android:label="InformacoesGeraisFragment" >
+        android:label="InformacoesGeraisFragment"
+        tools:layout="@layout/fragment_informacoes_gerais">
         <action
             android:id="@+id/action_informacoesGeraisFragment_to_secaoFragment"
             app:destination="@id/secaoFragment" />
@@ -49,18 +53,27 @@
     <fragment
         android:id="@+id/secaoFragment"
         android:name="com.example.questionarioimpacto.fragmentos.SecaoFragment"
-        android:label="SecaoFragment" >
+        android:label="SecaoFragment"
+        tools:layout="@layout/fragment_secao">
         <action
             android:id="@+id/action_secaoFragment_to_ameacaFragment"
             app:destination="@id/ameacaFragment" />
-
+        <argument
+            android:name="idAmeaca"
+            app:argType="string"
+            android:defaultValue="0"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_secaoFragment_to_sucessoQuestionarioFragment"
+            app:destination="@id/sucessoQuestionarioFragment" />
 
 
     </fragment>
     <fragment
         android:id="@+id/ameacaFragment"
         android:name="com.example.questionarioimpacto.fragmentos.AmeacaFragment"
-        android:label="AmeacaFragment" >
+        android:label="AmeacaFragment"
+        tools:layout="@layout/fragment_ameaca">
         <argument
             android:name="idAmeaca"
             app:argType="string" />
@@ -71,9 +84,28 @@
     <fragment
         android:id="@+id/questoesFragment"
         android:name="com.example.questionarioimpacto.fragmentos.QuestoesFragment"
-        android:label="QuestoesFragment" >
+        android:label="QuestoesFragment"
+        tools:layout="@layout/fragment_questoes">
         <argument
             android:name="idAmeaca"
             app:argType="string" />
+        <action
+            android:id="@+id/action_questoesFragment_to_secaoFragment"
+            app:destination="@id/secaoFragment"
+            app:popUpTo="@id/secaoFragment"
+            app:popUpToInclusive="true" >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/sucessoQuestionarioFragment"
+        android:name="com.example.questionarioimpacto.fragmentos.SucessoQuestionarioFragment"
+        android:label="SucessoQuestionarioFragment"
+        tools:layout="@layout/fragment_sucesso_questionario">
+        <action
+            android:id="@+id/action_sucessoQuestionarioFragment_to_indentificacaoFragment"
+            app:destination="@id/indentificacaoFragment"
+            app:popUpTo="@id/indentificacaoFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

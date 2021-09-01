@@ -7,11 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.questionarioimpacto.SectionAdapter.ItemClick
+import com.example.questionarioimpacto.adapters.SectionAdapter
+import com.example.questionarioimpacto.adapters.SectionAdapter.ItemClick
 import com.example.questionarioimpacto.connection.IncrementList
 import com.example.questionarioimpacto.models.ListSectionModel
 import com.example.questionarioimpacto.models.QuestionIdModel
 import com.example.questionarioimpacto.models.SectionModel
+import com.example.questionarioimpacto.viewmodels.IdentificationViewModel
 import com.google.gson.Gson
 import java.util.*
 import kotlinx.android.synthetic.main.activity_sections.*
@@ -65,7 +67,7 @@ class SectionsActivity : AppCompatActivity(), ItemClick {
     }
 
     fun send(view: View) {
-        viewModel.postQuestion(arrayList)
+//        viewModel.postQuestion(arrayList)
     }
 
 

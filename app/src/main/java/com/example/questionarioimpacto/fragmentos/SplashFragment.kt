@@ -9,27 +9,30 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.questionarioimpacto.Base.BaseFragment
 import com.example.questionarioimpacto.R
 import com.example.questionarioimpacto.TermsConditionsActivity
+import com.example.questionarioimpacto.connection.IncrementList
 import com.example.questionarioimpacto.databinding.FragmentSplashBinding
+import com.example.questionarioimpacto.models.ListSectionModel
+import com.google.gson.Gson
 
 
-class SplashFragment : Fragment() {
+class SplashFragment : BaseFragment<FragmentSplashBinding>() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        val binding: FragmentSplashBinding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_splash, container, false)
 
+
+    override fun getLayoutId() = R.layout.fragment_splash
+
+    override fun init() {
         val handle = Handler()
         handle.postDelayed({ mostrarLogin() }, 2000)
 
-        return binding.root
     }
 
     private fun mostrarLogin() {
-        view?.findNavController()?.navigate(SplashFragmentDirections.actionSplashFragmentToTermosCondicoesFragment())
+        view?.findNavController()
+            ?.navigate(SplashFragmentDirections.actionSplashFragmentToTermosCondicoesFragment())
     }
 
 

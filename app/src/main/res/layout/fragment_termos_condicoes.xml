@@ -77,6 +77,16 @@
                         android:layout_marginTop="24dp"
                         android:fontFamily="@font/poppins_black"
                         android:gravity="center"
+                        android:text="@string/tempo_questionario"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/poppins_black"
+                        android:gravity="center"
                         android:text="VOCÊ ACEITA PARTICIPAR?"
                         android:textColor="@color/colorWhite"
                         android:textSize="24dp" />

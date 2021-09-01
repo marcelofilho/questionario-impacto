@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.questionarioimpacto.adapters.ThreatAdapter
 import com.example.questionarioimpacto.connection.IncrementList
 import com.example.questionarioimpacto.models.*
+import com.example.questionarioimpacto.viewmodels.IdentificationViewModel
 import com.google.gson.Gson
 import kotlin.collections.ArrayList
 

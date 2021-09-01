@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.example.questionarioimpacto.R
-import com.example.questionarioimpacto.models.ListQuestionIdModel
-import com.example.questionarioimpacto.models.QuestionIdModel
+import com.example.questionarioimpacto.models.*
 import org.koin.android.ext.android.inject
 
 
@@ -17,6 +16,9 @@ abstract class BaseFragment <T : ViewDataBinding> : Fragment()  {
 
 
     val arrayListQuestionModel: ListQuestionIdModel by inject()
+    val listSection: SectionJsonModel by inject()
+    val dwellerIdModel: DwellerIdModel by inject()
+
 
     abstract fun init()
     abstract fun getLayoutId(): Int

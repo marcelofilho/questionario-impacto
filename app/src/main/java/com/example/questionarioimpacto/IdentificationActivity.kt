@@ -1,16 +1,15 @@
 package com.example.questionarioimpacto
 
-import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.questionarioimpacto.connection.IncrementList
 import com.example.questionarioimpacto.databinding.ActivityIdentificationBinding
 import com.example.questionarioimpacto.models.QuestionIdModel
+import com.example.questionarioimpacto.viewmodels.IdentificationViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -41,11 +40,12 @@ class IdentificationActivity : AppCompatActivity() {
     }
 
     fun initObserver(){
-        viewModel.dwellerIdGenerate.observe(this, Observer {
-
-            dwellerId = it
-
-        })
+//        viewModel.dwellerId.observe(this, Observer {
+//
+//            dwellerId = it
+//            println(dwellerId)
+//
+//        })
     }
 
      fun nextScreen(view: View?) {
