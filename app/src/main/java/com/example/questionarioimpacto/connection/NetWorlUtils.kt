@@ -1,9 +1,6 @@
 package com.example.questionarioimpacto.connection
 
 import com.example.questionarioimpacto.connection.Api.QuestionApi
-import com.example.questionarioimpacto.models.QuestionIdModel
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -53,7 +50,7 @@ private const val BASE_URL = "http://200.131.206.11:8080/api/mobile/"
                 .build()
     }
 
-private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+
 
 private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL).client(httpClient()).addConverterFactory(GsonConverterFactory.create())

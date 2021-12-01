@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.example.questionarioimpacto.R
 import com.example.questionarioimpacto.models.*
 import org.koin.android.ext.android.inject
 
