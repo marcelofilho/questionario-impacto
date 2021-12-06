@@ -1,13 +1,11 @@
 package com.example.questionarioimpacto.fragmentos
 
 
-import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.questionarioimpacto.Base.BaseFragment
 import com.example.questionarioimpacto.R
 import com.example.questionarioimpacto.adapters.QuestionsAdapter
-import com.example.questionarioimpacto.adapters.ThreatAdapter
 import com.example.questionarioimpacto.connection.IncrementList
 import com.example.questionarioimpacto.databinding.FragmentQuestoesBinding
 import com.example.questionarioimpacto.models.QuestionIdModel
@@ -65,9 +63,9 @@ class QuestoesFragment : BaseFragment<FragmentQuestoesBinding>(),
         questionList.questionList?.forEach{
 
             when(it.state){
-                "Pouco" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , it.id, "pouco", "5d41b0ce34e4386291d1a769"))
-                "Muito" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , it.id, "muito", "5d41b0ce34e4386291d1a769"))
-                "Nenhum" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , it.id, "nenhum", "5d41b0ce34e4386291d1a769"))
+                "Pouco" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , it.id, "pouco", "5d41b0ce34e4386291d1a769"))
+                "Muito" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , it.id, "muito", "5d41b0ce34e4386291d1a769"))
+                "Nenhum" ->  arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , it.id, "nenhum", "5d41b0ce34e4386291d1a769"))
             }
 
         }

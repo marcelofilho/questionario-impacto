@@ -38,11 +38,34 @@ class IdentificationViewModel : ViewModel(){
 
     fun getDwellerId(){
 
+//        RetrofitInitializer().service.getUsers()
+//            .enqueue(object : Callback<List<User>> {
+//                override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
+//                    response.body()?.let {
+//                        sucessCallback(it)
+//                        AsyncTask.execute {
+//                            userDao.insertUsers(it)
+//                        }
+//                    }
+//                }
+//                override fun onFailure(call: Call<List<User>>, t: Throwable) {
+//                    AsyncTask.execute {  val listUser = userDao.getAllUsers()
+//                        if(listUser.isNotEmpty()){
+//                            sucessCallback(userDao.getAllUsers())
+//                        }else{
+//                            failure(t.message)
+//                        }}
+//
+//                }
+//
+//            })
+
         viewModelScope.launch {
 
             try {
                 val dwellerIdResult =  MobileApi.retrofitService.getDwellerId()
-                _dwellerId.value = dwellerIdResult
+                println(dwellerIdResult)
+                _dwellerId.value = dwellerIdResult.body()
             }catch (e: Exception){
                 _error.value = "Faileure: ${e.message} "
             }

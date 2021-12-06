@@ -39,7 +39,7 @@ class IndentificacaoFragment : BaseFragment<FragmentIndentificacaoBinding>() {
 
     private fun setObervers() {
         viewModel.dwellerId.observe(viewLifecycleOwner, androidx.lifecycle.Observer  {
-            dwellerIdModel.dwellerId = it.dwellerId
+            dwellerIdModel.dwellerIdGenerate = it.dwellerIdGenerate
         })
     }
 
@@ -54,10 +54,10 @@ class IndentificacaoFragment : BaseFragment<FragmentIndentificacaoBinding>() {
     }
 
     private fun adicionarLista() {
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , "07b700c0-2ed3-4fc4-bc85-117058d53a2f", binding.endereco.text.toString(), "5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , "577350b6-fad1-4d1e-b214-b531ea4028ce", formataData.format(data), "5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , "93808a97-9bab-4f05-901b-382c7fcb0dc9", getHour(), "5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerId , "fcdbf778-c92d-46b7-876f-b02af4aa8026", binding.telefone.text.toString(), "5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , "07b700c0-2ed3-4fc4-bc85-117058d53a2f", binding.endereco.text.toString(), "5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , "577350b6-fad1-4d1e-b214-b531ea4028ce", formataData.format(data), "5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , "93808a97-9bab-4f05-901b-382c7fcb0dc9", getHour(), "5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate , "fcdbf778-c92d-46b7-876f-b02af4aa8026", binding.telefone.text.toString(), "5d41b0ce34e4386291d1a769"))
     }
 
     private fun getHour(): String{

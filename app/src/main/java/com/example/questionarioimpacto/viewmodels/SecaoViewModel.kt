@@ -22,6 +22,8 @@ class SecaoViewModel : ViewModel() {
 
     fun postQuestion(array: ArrayList<QuestionIdModel> ){
 
+
+
         viewModelScope.launch {
 
             try {

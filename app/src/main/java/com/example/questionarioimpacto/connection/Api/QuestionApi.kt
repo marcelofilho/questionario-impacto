@@ -15,5 +15,5 @@ interface QuestionApi {
     suspend fun  postQuestion(@Body question: ArrayList<QuestionIdModel>): Response<Void>
 
     @POST("postdwellerId")
-    suspend fun  getDwellerId(): DwellerIdModel
+    suspend fun  getDwellerId(): Response<DwellerIdModel>
 }
