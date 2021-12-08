@@ -42,9 +42,9 @@ class InformacoesGeraisFragment : BaseFragment<FragmentInformacoesGeraisBinding>
         arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"cd5802b1-5902-4505-a3ca-943723b91aa0",sexo,"5d41b0ce34e4386291d1a769"))
         arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"e98ec129-e897-42d2-aaa9-a4b82417842c",idade,"5d41b0ce34e4386291d1a769"))
         arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"b621b73f-0851-46c5-9a1f-a0bed4ce9718",renda,"5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"bfde39a8-6a04-4eb2-ad3e-fe05c68d2f26",familia,"5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"679d97f0-b7cf-4957-a2ca-00a8fb704931",quantidadePessoa,"5d41b0ce34e4386291d1a769"))
-        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"1433c4fc-9c7c-4582-8c46-ef6ebce3438c",energia,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"22670d3f-baff-4865-9e60-134f0f8beb42",familia,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"03251ce7-99cc-4d4a-bb4f-eba8c4094e0f",quantidadePessoa,"5d41b0ce34e4386291d1a769"))
+        arrayListQuestionModel.questionIdModelList.add(QuestionIdModel(dwellerIdModel.dwellerIdGenerate ,"049c2d00-6ab6-4797-91a0-c609cee928a5",energia,"5d41b0ce34e4386291d1a769"))
     }
 
     private fun receberTextosRadioButton(){
